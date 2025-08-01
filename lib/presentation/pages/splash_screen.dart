@@ -37,8 +37,8 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
-        child: Lottie.network(
-          'https://lottie.host/d5b1a44b-7922-403b-bf3a-0c0e9ddf15a9/0JCyMgSGsv.json',
+        child: Lottie.asset(
+          'assets/lottie/lovely_cats.json',
           controller: _controller,
           onLoaded: (composition) {
             _controller

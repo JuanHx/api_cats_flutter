@@ -196,14 +196,14 @@ class _RandomCatPageState extends State<RandomCatPage> {
                 children: [
                   _buildVoteButton(
                     context,
-                    icon: 'assets/icons/me-gusta.png',
+                    icon: 'assets/icons/no-me-gusta.png',
                     color: Colors.red,
                     isLike: false,
                     breedId: state.breed.id,
                   ),
                   _buildVoteButton(
                     context,
-                    icon: 'assets/icons/no-me-gusta.png',
+                    icon: 'assets/icons/me-gusta.png',
                     color: Colors.green,
                     isLike: true,
                     breedId: state.breed.id,
@@ -246,14 +246,7 @@ class _RandomCatPageState extends State<RandomCatPage> {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
       ),
       child: Row(
-        children: [
-          ImageIcon(AssetImage(icon), color: Colors.white, size: 24),
-          const SizedBox(width: 8),
-          Text(
-            isLike ? 'Me gusta' : 'No me gusta',
-            style: const TextStyle(color: Colors.white),
-          ),
-        ],
+        children: [ImageIcon(AssetImage(icon), color: Colors.white, size: 24)],
       ),
     );
   }

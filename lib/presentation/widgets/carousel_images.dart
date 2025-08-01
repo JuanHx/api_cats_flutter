@@ -13,7 +13,6 @@ class CarouseImages extends StatelessWidget {
       itemBuilder: (context, index, realIndex) {
         final image = widget.images[index];
         return Material(
-          elevation: 8,
           borderRadius: BorderRadius.circular(16),
           clipBehavior: Clip.antiAlias,
           child: ClipRRect(

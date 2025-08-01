@@ -38,8 +38,8 @@ class _NotFoundState extends State<NotFound>
           child: SizedBox(
             width: MediaQuery.of(context).size.width * 0.8,
             height: MediaQuery.of(context).size.width * 0.8,
-            child: Lottie.network(
-              'https://lottie.host/34d25abd-a180-4714-8ad5-813997eb24a5/islpGgCexz.json',
+            child: Lottie.asset(
+              'assets/lottie/error_404.json',
               fit: BoxFit.contain,
               controller: _controller,
               onLoaded: (composition) {

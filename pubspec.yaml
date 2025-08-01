@@ -42,6 +42,7 @@ dependencies:
   carousel_slider: ^5.1.1
   google_fonts: ^6.2.1
   webview_flutter: ^4.13.0
+  flutter_launcher_icons: ^0.13.1
 
 dev_dependencies:
   flutter_test:
@@ -53,6 +54,11 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/pata.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -71,6 +77,10 @@ flutter:
     - assets/icons/toma-de-decisiones.gif
     - assets/icons/me-gusta.png
     - assets/icons/no-me-gusta.png
+    - assets/icons/pata.png
+    - assets/lottie/cat_paw_loading.json
+    - assets/lottie/error_404.json
+    - assets/lottie/lovely_cats.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

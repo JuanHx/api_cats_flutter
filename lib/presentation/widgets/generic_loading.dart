@@ -40,8 +40,8 @@ class _GenericLoadingState extends State<GenericLoading>
             height: MediaQuery.of(context).size.width * 0.8,
             child: ColorFiltered(
               colorFilter: ColorFilter.mode(widget.pawColor, BlendMode.srcATop),
-              child: Lottie.network(
-                'https://lottie.host/6389a6a6-f979-4686-90dc-ea6482ec603d/H966xXPCZP.json',
+              child: Lottie.asset(
+                'assets/lottie/cat_paw_loading.json',
                 fit: BoxFit.contain,
                 controller: _controller,
                 onLoaded: (composition) {
